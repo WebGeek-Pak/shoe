@@ -1,0 +1,699 @@
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+img
+{
+  max-width: 100%;
+  display: block;
+
+}
+
+h1,
+h2,
+h3,
+p
+{
+  margin: 0;
+}
+
+.spacing >*+*
+{
+  margin-top: 2em;
+}
+
+.navbar
+{
+  background: #9447F5;
+height: 4.5rem;
+position: fixed;
+width: 100%;
+z-index: 99;
+
+&__img
+{
+margin-top: 1.5rem;
+margin-left: 5em;
+}
+
+&__anchor
+{
+  text-decoration: none;
+  color: black;
+}
+
+&__btn
+{
+  width: 100px;
+  height: 30px;
+  background: #feca57;
+  border: none;
+  position: absolute;;
+  right: 5%;
+  top:1.8em;
+  font-weight: 700;
+  transform: scale(1);
+  transition: transform 250ms ease-in-out;
+  border-radius: 5px;
+    &:hover
+    {
+      transform: scale(1.1);
+    }
+}
+}
+
+
+
+.sidebar
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f1f2f6;
+  margin-top: 4.5rem;
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid #ced6e0;
+  box-shadow: 5px 0px 10px #ced6e0;
+  transform: translateX(-500px);
+  transition: transform 250ms ease-in-out;
+
+  &__ul
+  {
+    display: block;
+    list-style: none;
+  }
+
+  &__li
+  {
+    display: block;
+    padding: 3em 2em;
+    border-bottom: 2px solid #ced6e0;
+  }
+
+  &__anchor
+  {
+   text-decoration: none;
+   color: black;
+  }
+}
+
+.menu
+{
+  width: 2.5em;
+  height: 2.5em;
+  float: right;
+  margin-top: -1.5rem;
+  background:#f1f2f6;
+}
+.line
+  {
+  background:black;
+  height:4px;
+  width:1.6em;
+  transform: translateY(0px);
+  transition:all 0.8s;
+
+  }
+
+  .line1
+  {
+    position: absolute;
+    top:35%;
+    right:0.4em;
+  }
+
+  .line2
+  {
+    position: absolute;
+    top:45%;
+    right:0.4em;
+  }
+
+  .line3
+  {
+    position: absolute;
+    top:55%;
+    right:0.4em;
+  }
+
+
+.menu:checked ~ .sidebar
+{
+  transform: translateX(0px);
+}
+
+.navbar__ul
+{
+  display:none;
+  position: absolute;
+  top: -2.4em;
+  right: 12%;
+  list-style: none;
+  font-weight: 700;
+}
+
+.navbar__li
+{
+  display: none;
+  padding: 50px;
+}
+
+@media screen and (min-width:65rem)
+{
+
+  .navbar__ul
+  {
+    display: flex;
+
+  }
+
+  .navbar__li
+  {
+    display: inline-block;
+
+  }
+
+
+  .menu
+  {
+
+    display: none;
+  }
+  .line
+    {
+
+      display: none;
+    }
+
+    .sidebar
+    {
+      display: none;
+    }
+}
+//.....................................................
+// ................ navbar/header ends..................
+//.....................................................
+.landingpage
+{
+
+background: #9447F5;
+position: absolute;
+width: 100%;
+display: flex;
+gap:2.5em;
+&__image
+{
+  position: relative;
+  margin-top: 10em;
+  margin-left:15%;
+  width: 374px;
+  height: 565px;
+  display:block;
+  float:left;
+  justify-content: center;
+
+  &__img
+  {
+    width: 100%;
+    height: 100%;
+
+
+  }
+    }
+
+  &__content
+  {
+   position: relative;
+margin-top: 15em;
+    display:block;
+    margin-right: 5em;
+
+    &__title
+    {
+      font-size: clamp(2rem,calc(5vw + 1rem ),3rem);
+    text-align: center;
+    color: white;
+
+    }
+
+    &__des
+    {
+      font-size: clamp(.5rem,calc(2vw + 1rem ),.85rem);
+    text-align: center;
+    color: white;
+    }
+
+
+    &__btn
+    {
+      width: 60%;
+      height: 3em;
+      background: #feca57;
+      border: none;
+      font-weight: 700;
+      transform: scale(1);
+      transition: transform 250ms ease-in-out;
+      border-radius: 5px;
+      margin-left: 26%;
+        &:hover
+        {
+          transform: scale(1.1);
+        }
+    }
+
+      &__bottom
+      {
+      margin-left: 20%;
+      font-family: fantasy;
+      letter-spacing: 0.25em;
+      }
+   }
+
+   input
+   {
+
+       width: 70%;
+       height: 3em;
+       margin-left: 20%;
+       text-align: center;
+
+
+   }
+
+
+
+}
+
+@media screen and (max-width:30rem)
+{
+  .landingpage
+  {
+  display:block;
+
+  &__image
+  {
+
+    margin-left:15%;
+
+      }
+
+    &__content
+    {
+
+      margin: 2em;
+
+      &__btn
+      {
+
+        margin-left: 20%;
+
+      }
+
+        &__bottom
+        {
+        letter-spacing: 0.2em;
+        }
+     }
+
+     input
+     {
+         margin-left: 15%;
+
+     }
+  }
+}
+
+//.....................................................
+// ................ landing page section ends..........
+//.....................................................
+
+.benefits
+{
+  background: white;
+position: relative;
+  width: 100%;
+min-height: 625px;
+top:48em;
+
+
+  &__title
+   {
+     text-align: center;;
+     margin-left: 0%;
+
+        h3
+        {
+         position: relative;
+         top: 4em;
+         color: blue;
+         }
+
+        h1
+        {
+         font-size: clamp(2rem,calc(5vw + 1rem ),3rem);
+        }
+   }
+
+}
+
+
+
+   .benefits__points
+    {
+      text-align: left;
+      margin-left: 0%;
+      position: relative;
+      top: 5em;
+
+       &__ul
+       {
+         list-style: none;
+         display:flex;
+         gap:4em;
+         flex-wrap: wrap;
+         justify-content: center;
+
+         & > *{
+           flex-basis: 25%;
+           min-width: 15em;
+         }
+
+       }
+
+       &__li
+       {
+        width: 25%;
+        padding: 15px;
+       }
+
+
+         i
+         {
+          font-size:58px;
+          float: left;
+          }
+    }
+
+    .sponsers
+    {
+      text-align: center;
+      margin-left: 0%;
+      position: relative;
+      top: 10em;
+      &__h3
+      {
+        text-transform: capitalize;
+        margin-bottom: 2em;
+      }
+      &__images
+      {
+        display: flex;
+        gap:4em;
+        flex-wrap: wrap;
+        margin-left: 15%;
+
+      }
+    }
+
+    //.....................................................
+    // ................Benefits ends......................
+    //.....................................................
+
+
+    .amazon
+    {
+
+    background: #f8f9fc;
+    position: relative;
+      width: 100%;
+    min-height: 625px;
+    display: flex;
+    top:60em;
+    &__image
+    {
+      position: relative;
+      margin-top: 10em;
+      margin-left:15%;
+      width: 374px;
+      height: 565px;
+      display:block;
+      float:left;
+      justify-content: center;
+
+      &__img
+      {
+        width: 100%;
+        height: 100%;
+
+
+      }
+        }
+
+      &__content
+      {
+       position: relative;
+    margin-top: 15em;
+        display:block;
+        margin-right: 5em;
+
+        &__title
+        {
+          font-size: clamp(2rem,calc(5vw + 1rem ),3rem);
+        text-align: center;
+        color: black;
+
+        }
+
+        &__des
+        {
+          font-size: clamp(.5rem,calc(2vw + 1rem ),.85rem);
+        text-align: center;
+        color: black;
+        }
+
+
+        &__btn
+        {
+          width: 60%;
+          height: 3em;
+          background: #feca57;
+          border: none;
+          font-weight: 700;
+          transform: scale(1);
+          transition: transform 250ms ease-in-out;
+          border-radius: 5px;
+          margin-left: 26%;
+            &:hover
+            {
+              transform: scale(1.1);
+            }
+        }
+
+          &__bottom
+          {
+          margin-left: 20%;
+          font-family: fantasy;
+          letter-spacing: 0.25em;
+          }
+       }
+
+       input
+       {
+
+           width: 70%;
+           height: 3em;
+           margin-left: 20%;
+           text-align: center;
+
+
+       }
+
+
+
+    }
+
+    @media screen and (max-width:30rem)
+    {
+      .amazon
+      {
+      display:block;
+
+      &__image
+      {
+
+        margin-left:15%;
+
+          }
+
+        &__content
+        {
+
+          margin: 2em;
+
+          &__btn
+          {
+
+            margin-left: 20%;
+
+          }
+
+            &__bottom
+            {
+            letter-spacing: 0.2em;
+            }
+         }
+
+         input
+         {
+             margin-left: 15%;
+
+         }
+      }
+    }
+
+    //.....................................................
+    // ................amazon ends......................
+    //.....................................................
+
+    .chapters
+    {
+
+    background:white;
+    position: relative;
+      width: 100%;
+    min-height: 625px;
+    display: block;
+    top:62em;
+
+  }
+
+.chapters__title
+   {
+     text-align: center;
+     display: block;
+     top:62em;
+       h3
+        {
+         position: relative;
+         top: 4em;
+         color: blue;
+         }
+
+        h1
+        {
+         font-size: clamp(2rem,calc(5vw + 1rem ),3rem);
+         margin-bottom: 2em;
+        }
+   }
+
+  .chapter__tab__sidebar
+  {
+    width: 150px;
+    display:block;
+
+    float: left;
+    margin-left: 20%;
+    margin-top: 3%;
+    margin-right: 5%;
+       .btn
+       {
+        border: 0;
+        text-align: center;
+         background: none;
+         padding: 1em;
+         margin-top: 10px;
+         margin-bottom: 10px;
+         color: #747d8c;
+         font-weight: 700;
+         font-size: 1.2em;
+
+        border-bottom: 1px solid black;
+       }
+
+  }
+
+
+#c2
+{
+  display: none;
+
+}
+
+.chapter__tab__content{
+  display: block;
+  width:40%;
+  box-shadow: 0px 0px 10px #7efff5;
+  margin-left: 40%;
+  margin-top: 15%;
+  padding: 15px;
+  text-align: center;
+  z-index: 1;
+  border-radius: 20px;
+  h3
+  {
+  font-size: clamp(1rem,calc(3vw + 1rem ),2rem);
+  }
+}
+
+//.....................................................
+// ................chapters......................
+//.....................................................
+
+
+.foot{
+  width: 100%;
+  height: 100px;
+  background: #9447F5;
+  position: relative;
+  display:flex;
+  top:64em;
+  color: white;
+  font-weight: 700;
+
+  pre
+  {
+    margin-left: 2em;
+    margin-top: 4em;
+  }
+
+  &__ul
+  {
+    display:flex;
+    list-style: none;
+    margin-left: 5em;
+  }
+
+  &__social
+  {
+    display: flex;
+    list-style: none;
+    margin-right: 5em;
+  }
+
+  &__li
+  {
+
+    padding: 1.5em;
+    text-decoration: none;
+
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+  }
+}
