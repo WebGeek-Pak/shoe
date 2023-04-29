@@ -1,0 +1,252 @@
+.container {
+
+    background: url(bg.jpg);
+    height: 800px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.logo {
+    color: aquamarine;
+    display: inline;
+    padding: 10px;
+    letter-spacing: 4px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+    border: 1px solid rgb(203, 255, 126);
+    border-radius: 10px;
+    font-size: 40px;
+}
+
+.but {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    border-radius: 40px;
+    border: 1px solid rgb(203, 255, 126);
+    left: 40px;
+    display: inline;
+    position: relative;
+    top: 18px;
+
+}
+
+.but:hover {
+    box-shadow: 1px 1px 15px rgb(203, 255, 126);
+    color: rgb(203, 255, 126);
+}
+
+#home {
+
+    margin-right: 30px;
+}
+
+
+
+#pack {
+    margin-right: 30px;
+
+}
+
+.heading {
+    color: rgb(203, 255, 126);
+    position: relative;
+    top: 160px;
+    left: 100px;
+    letter-spacing: 7px;
+    font-size: 50px;
+}
+
+.subhead {
+    width: 562px;
+    color: white;
+    position: relative;
+    left: 100px;
+    top: 140px;
+
+
+}
+
+.cpack {
+    background-color: rgb(203, 255, 126);
+    color: black;
+    padding: 10px;
+    width: 150px;
+    border-radius: 40px;
+    border: 1px solid black;
+    display: inline;
+    position: relative;
+    left: 100px;
+    top: 140px;
+}
+
+.cpack:hover {
+    box-shadow: 1px 1px 15px rgb(203, 255, 126);
+}
+
+.advantages {
+    height: 350px;
+    background-color: rgb(203, 255, 126);
+    width: 100%;
+    position: relative;
+    top: -100px;
+    box-shadow: 1px 1px 10px rgb(203, 255, 126);
+
+
+
+}
+
+.secondcontainer {
+    height: 904px;
+    display: block;
+    background-color: black;
+    overflow: hidden;
+}
+
+
+.advan1 {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    float: left;
+}
+
+.advan1para {
+    width: 300px;
+    color: black;
+    position: relative;
+    left: 98px;
+    top: 156px;
+    float: left;
+
+}
+
+.advan2 {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    top: 150px;
+    left: 340px;
+    display: inline;
+    float: left;
+}
+
+.advan2para {
+    width: 300px;
+    color: black;
+    position: relative;
+    left: 387px;
+    top: 157px;
+    display: inline;
+    float: left;
+
+}
+
+
+.learn {
+    background-color: black;
+    color: rgb(203, 255, 126);
+    padding: 10px;
+    width: 170px;
+    border-radius: 40px;
+    border: 1px solid black;
+    left: -287px;
+    display: inline;
+    position: relative;
+    top: 290px;
+}
+
+.learn:hover {
+
+    box-shadow: 1px 1px 10px black;
+
+
+}
+
+.packagesheadadvan{
+color:rgb(203, 255, 126) ;
+    position: relative;
+    top: -50px;
+    left: 477px;
+    letter-spacing: 7px;
+    font-size: 30px;
+    width: 30%;
+    
+}
+
+.packheadpara{
+    width: 517px;
+    position: relative;
+    top: -80px;
+    left: 403px;
+    color: white;
+}
+
+
+.advantagecontainer{
+
+    background-color: rgb(203, 255, 126);
+    padding: 25px;
+    width: 360px;
+    height: 270px;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+   
+    margin-left: 20px; 
+}
+
+#basic{
+    position: relative;
+   
+    top: -44px; 
+}
+
+#advance{
+    position: relative;
+   
+    top: -70px;  
+}
+
+#premimum{
+    position: relative;
+   
+    top: -70px;  
+}
+.basichead{
+    font-size: 35px;
+    position: relative;
+    left: 20px;
+    letter-spacing: 3px;
+    color: black;
+
+}
+
+.advantagecontainer ul li{
+    font-size: 15px;
+    color: black;
+    line-height: 35px;
+ 
+
+}
+
+.packbutton{
+    color:rgb(203, 255, 126) ;
+    background-color: black;
+    width: 160px;
+    height: 29px;
+    border-radius: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 100px;
+}
+
+.packbutton:hover{
+    box-shadow: 1px 1px 10px black;
+
+
+}
