@@ -1,2 +1,2 @@
-# shoe
+# Projects
 landing page template
