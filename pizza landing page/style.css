@@ -1,0 +1,729 @@
+/* css style sheet practice webgeek*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+
+    color: black;
+    
+}
+
+/* navbar css   */
+.navbar
+{
+    display: flex;
+    background-color: black;
+    opacity: 0.8;
+
+}
+
+.navbar::before{
+
+    content:"" ;
+background: url(bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    opacity: 0.8;
+
+}
+
+.navbar img{
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 0.6rem;
+}
+
+.navbar h2{
+    color: rgb(255, 235, 211);
+    padding: 1.1rem;
+    font-size: 2rem;
+    font-family: 'Joti One';
+}
+
+.navbar ul
+
+{
+    margin-top: 0.3rem;
+    padding: 1.5rem;
+
+}
+
+.navbar li{
+    list-style: none;
+    display: inline;
+   
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-style: normal;
+    color: rgb(255, 235, 211);
+padding: 0.8rem;
+margin: 0.7rem;
+font-family: 'Joti One';
+font-size: 1rem;
+
+
+}
+
+.navbar li a:hover{
+   
+    color: black;
+
+border: 0px solid white;
+border-radius: 23px;
+background-color:  rgb(255, 235, 211);
+
+}
+
+.btnfront{
+    position: absolute;
+    top: 24rem;
+    left: 36rem;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 23px;
+    border: 0px solid black;
+    font-family: 'Joti One';
+    font-size: 1.3rem;
+    background-color: rgb(255, 235, 211);
+    
+
+}
+
+.btnfront:hover{
+
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    }
+
+.head1
+{
+    color: rgb(253, 195, 123);
+text-shadow: 2px 2px black ;
+    text-align: center;
+    margin-top: 170px;
+    font-size: 5rem;
+    height: 100px;
+    font-family: 'Joti One';
+    animation-name: sizechange;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    position: absolute;
+    top: 2rem;
+    left: 27rem;
+
+    
+    
+}
+
+.p1{
+    color: rgb(255, 235, 211);
+    text-shadow: 1px 1px black ;
+
+    text-align: center;
+    font-size: 0.9rem;
+    position: absolute;
+    display: flex;
+    top: 20rem;
+    left: 21rem;
+}
+
+.p2
+{
+    color: rgb(255, 235, 211);
+    text-shadow: 1px 1px black ;
+
+    text-align: center;
+    font-size: 0.9rem;
+    position: absolute;
+    display: flex;
+    top: 21rem;
+    left: 28rem;
+
+}
+
+
+@keyframes sizechange {
+    from{
+        font-size: 0rem ;
+    }
+
+    to{
+        margin-top: 170px;
+
+    }
+    
+}
+
+/*  section promotion */
+
+#promotion{
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position:absolute ;
+    top:625px;
+    left: -17px;
+
+}
+
+#promotion::before{
+    content:"" ;
+background: url(bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -99;
+    opacity: 0.2;
+    overflow: hidden;
+}
+
+#promotion div{
+    margin: auto;
+     width: 60rem;
+     height: 30rem;
+     background-color: rgb(243, 241, 230);
+     margin: auto;
+     border: 1px solid black;
+     border-radius: 23px;
+     box-shadow: 5px 5px  10px rgb(116, 113, 113);
+    
+ }
+
+
+ 
+
+
+.prom{
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    padding: 2rem;
+    transition: all ease-in-out 2s;
+
+}
+
+.prom:hover{
+    
+    transform: rotate(360deg);
+}
+
+.head2
+{
+    color: rgb(253, 195, 123);
+text-shadow: 2px 2px black ;
+    text-align: center;
+    position: absolute;
+    margin-top: -260px;
+    font-size: 2.5rem;
+    height: 100px;
+    font-family: 'Joti One';
+    left: 39rem;
+    
+}
+
+.p3{
+    color: rgb(253, 195, 123);
+    text-shadow: 1px 1px black ;
+    margin-top: -206px;
+    text-align: center;
+    font-size: 0.9rem;
+    position: absolute;    
+    left: 37rem;
+}
+
+.p4{
+    color: rgb(253, 195, 123);
+    text-shadow: 1px 1px black ;
+    margin-top: -186px;
+    text-align: center;
+    font-size: 0.9rem;
+    position: absolute;    
+    left: 40rem;
+}
+
+
+.btnprom{
+    position: absolute;
+    margin-top: 257px;
+    left: 39rem;
+    width: 26rem;
+    height: 3rem;
+    border-radius: 23px;
+    border: 0px solid black;
+    font-family: 'Joti One';
+    font-size: 1.7rem;
+    background-color: rgb(255, 235, 180);
+    
+
+}
+
+.btnprom:hover{
+
+box-shadow: 2px 2px 10px rgb(223, 192, 107);
+}
+
+/* deals*/
+
+#deals
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position:absolute ;
+    top:1250px;
+    left:-17px;
+    align-items: center;
+    
+}
+
+#deals::before{
+    content:"" ;
+background: url(bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -98;
+    opacity: 0.2;
+    overflow: hidden;
+}
+
+.rd1{
+    margin: auto;
+    width: 20rem;
+    height: 25rem;
+    
+    display: flex;
+    flex-direction: column;
+    border: 0px solid black;
+    border-radius: 23px;
+    box-shadow: 4px 4px 20px grey;
+    align-content: center;
+    padding: 3rem;
+    margin-left:1.7rem;    
+}
+
+.rd2{
+    margin: auto;
+    width: 20rem;
+    height: 25rem;
+    
+    display: flex;
+    flex-direction: column;
+    border: 0px solid black;
+    border-radius: 23px;
+    box-shadow: 4px 4px 20px grey;
+    align-content: center;
+    padding: 3rem;
+    margin-left:1.7rem;    
+}
+
+.rd3{
+    margin: auto;
+    width: 20rem;
+    height: 25rem;
+    
+    display: flex;
+    flex-direction: column;
+    border: 0px solid black;
+    border-radius: 23px;
+    box-shadow: 4px 4px 20px grey;
+    align-content: center;
+    padding: 3rem;
+    margin-left:1.7rem;    
+}
+
+
+#deals img{
+    width: 10rem;
+    height: 10rem;
+    border: 0px solid black;
+    border-radius: 50%;
+    margin-left: 3.8rem;
+
+}
+
+
+.head3
+{
+    color: rgb(253, 195, 123);
+text-shadow: 1px 1px black ;
+    text-align: center;
+    position: absolute;
+   
+    font-size: 2.7rem;
+   
+    font-family: 'Joti One';
+    margin-top: 10rem;
+    margin-left: 4rem;
+    
+    
+}
+
+.p5{
+    color: rgb(253, 195, 123);
+    text-shadow: 1px 1px black ;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+    
+    
+   
+}
+
+.p6{
+    color: rgb(253, 195, 123);
+    text-shadow: 1px 1px black ;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+      
+
+}
+
+
+.btndeal{
+    
+    
+    width: 16rem;
+    height: 3rem;
+    border-radius: 23px;
+    border: 0px solid black;
+    font-family: 'Joti One';
+    font-size: 1.7rem;
+    background-color: rgb(255, 235, 180);
+    margin-top: 2rem;
+    margin-left: 2rem;
+    
+
+}
+
+.btndeal:hover{
+
+box-shadow: 2px 2px 10px rgb(223, 192, 107);
+}
+
+
+/* chefs*/
+
+#chefs
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position:absolute ;
+    top:1875px;
+    left:-17px;
+    align-items: center;
+    
+}
+
+#chefs::before{
+    content:"" ;
+background: url(bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -97;
+    opacity: 0.2;
+    overflow: hidden;
+}
+
+#chefs div{
+    margin: auto;
+    width: 19rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 23px;
+    align-content: center;
+    padding: 3rem;
+    margin-left:1.7rem;  
+    border: 0px solid black;  
+    margin-left: 2rem;
+    margin-top: 8rem;
+    box-shadow: 4px 4px 20px grey;
+    border-radius: 23px;
+
+}
+
+#chefs img{
+    width: 10rem;
+    height: 10rem;
+    border: 0px solid black;
+    border-radius: 50%;
+    margin-left: 5rem;
+   
+
+}
+
+
+
+
+.head4
+{
+    color: rgb(253, 195, 123);
+text-shadow: 1px 1px black ;
+    text-align: center;
+    position: absolute;
+    font-size: 2.7rem;
+    width: 100%;
+   
+    font-family: 'Joti One';
+    margin-top: -30rem;
+    
+    
+    
+}
+
+.head5
+{
+    color: rgb(253, 195, 123);
+text-shadow: 1px 1px black ;
+    text-align: center;
+    position: absolute;
+    font-size: 2rem;
+   margin-top: 10rem;
+   margin-left: 5rem;
+    font-family: 'Joti One';
+    
+    
+    
+    
+}
+
+.p7{
+    color: rgb(253, 195, 123);
+    text-shadow: 1px 1px black ;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+    
+    
+   
+}
+
+.p8{
+    color: rgb(253, 195, 123);
+    text-shadow: 1px 1px black ;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+      
+
+}
+
+/* contact*/
+
+#contact
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    position:absolute ;
+    top:2500px;
+    left:-17px;
+    align-items: center;
+    
+}
+
+#contact::before{
+    content:"" ;
+background: url(bg1.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -98;
+    opacity: 0.2;
+    overflow: hidden;
+}
+
+.conus{
+    margin: auto;
+    width: 70rem;
+    height: 23rem;
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 23px;
+    align-content: center;
+    padding: 3rem;
+     background-color: rgb(243, 241, 230);
+    border: 0px solid black;  
+    margin-left: 5rem;
+    box-shadow: 4px 4px 20px grey;
+    border-radius: 23px;
+
+}
+
+.form
+{
+float: left;
+padding: 1.5rem;
+margin-top: 1rem;
+margin-left: 10rem;
+color: rgb(253, 195, 123);
+    text-shadow: 1px 1px black ;
+        font-size: 1.2rem;
+        font-family: 'Joti One';
+}
+
+#contact img{
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    transition: all ease-in-out 2s;
+    float: left;
+
+}
+
+#contact img:hover{
+    
+    transform: rotate(360deg);
+
+}
+
+.name{
+    width: 30rem;
+    height: 2rem;
+    margin-top: -20rem;
+    background-color:rgb(243, 241, 230) ;
+    border: 0px solid black;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 3px;
+
+}
+
+.email{
+    width: 30rem;
+    height: 2rem;
+    margin-top: -20rem;
+    background-color:rgb(243, 241, 230) ;
+    border: 0px solid black;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 3px;
+
+}
+
+.phone{
+    width: 30rem;
+    height: 2rem;
+    margin-top: -20rem;
+    background-color:rgb(243, 241, 230) ;
+    border: 0px solid black;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 3px;
+
+}
+
+.comment{
+    width: 30rem;
+    height: 7rem;
+  
+    background-color:rgb(243, 241, 230) ;
+    border: 0px solid black;
+    box-shadow: 1px 1px 5px grey;
+    border-radius: 3px;
+    
+
+}
+.btnform{
+    
+    
+    width: 16rem;
+    height: 3rem;
+    border-radius: 23px;
+    border: 0px solid black;
+    font-family: 'Joti One';
+    font-size: 1.7rem;
+    background-color: rgb(255, 235, 180);
+    margin-left: 2rem;
+    
+
+}
+
+.btnform:hover{
+
+box-shadow: 2px 2px 10px rgb(223, 192, 107);
+}
+
+/* footer*/
+.foot
+{
+    display: flex;
+    padding: 0;
+    width: 100vw;
+    height: 100px;
+    position:absolute ;
+    top:3125px;
+    left:-17px;
+    align-items: center;
+    border-top: 2px solid black;
+    
+}
+.foot::before{
+    content:"" ;
+background: url(bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100vw;
+    height: 100px;
+    z-index: -93;
+    opacity: 0.7;
+    overflow: hidden;
+}
+
+.head6
+{
+    color: rgb(253, 195, 123);
+text-shadow: 1px 1px black ;
+    text-align: center;
+    font-size: 2.5rem;
+   margin-left: 25rem;
+    font-family: 'Joti One';
+    
+    
+    
+    
+}
+
+.p9{
+    color: rgb(253, 195, 123);
+    text-shadow: 1px 1px black ;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 3rem;
+    
+    font-family: 'Joti One';
+
+   
+}
+
+.p10{
+    color: rgb(253, 195, 123);
+    text-shadow: 1px 1px black ;
+    text-align: center;
+    font-size: 1rem;
+    margin-left: 20rem;
+        font-family: 'Joti One';
+
+    
+   
+}
